@@ -1,6 +1,6 @@
 {
-    "name": "repositoryimage",
-    "version": "0.1.0",
+    "name": "@dataplain/repositoryimage",
+    "version": "0.1.1",
     "description": "Vue component to display an image from a repository.",
     "author": {
         "name": "Paulo Sergio Klaus",
