@@ -47,9 +47,9 @@ Create the src/resources/repositoryimage.js:
 
 ```javascript
 import Vue from "vue";
-import repositoryimage from "@dataplain/repositoryimage";
+import RepositoryImage from "@dataplain/RepositoryImage";
 
-Vue.use(repositoryimage, { repositoryimageName: "Myrepositoryimage" });
+Vue.use(RepositoryImage, { RepositoryImageName: "MyRepositoryImage" });
 ```
 
 ### Import repositoryimage.js and dependencies
