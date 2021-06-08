@@ -32,7 +32,7 @@ Create the src/resources/repositoryimage.js:
 
 ```javascript
 import Vue from "vue";
-import RepositoryImage from "@dataplain/RepositoryImage";
+import RepositoryImage from "@dataplain/repositoryimage";
 
 Vue.use(RepositoryImage, { RepositoryImageName: "MyRepositoryImage" });
 ```
