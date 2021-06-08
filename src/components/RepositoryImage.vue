@@ -3,6 +3,8 @@
 </template>
 
 <script>
+require("dotenv").config();
+
 export default {
     props: {
         src: {
