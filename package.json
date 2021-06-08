@@ -1,6 +1,6 @@
 {
     "name": "@dataplain/repositoryimage",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "description": "Vue component to display an image from a repository.",
     "author": {
         "name": "Paulo Sergio Klaus",
@@ -29,8 +29,8 @@
         "src"
     ],
     "dependencies": {
-        "core-js": "^3.6.5",
-        "vue": "^2.6.11"
+        "core-js": "^3.14.0",
+        "vue": "^2.6.14"
     },
     "devDependencies": {
         "@vue/cli-plugin-babel": "~4.5.0",
@@ -40,7 +40,7 @@
         "dotenv": "^10.0.0",
         "eslint": "^6.7.2",
         "eslint-plugin-vue": "^6.2.2",
-        "vue-template-compiler": "^2.6.11"
+        "vue-template-compiler": "^2.6.14"
     },
     "eslintConfig": {
         "root": true,
