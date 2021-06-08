@@ -1,5 +1,5 @@
 <template>
-    <b-img :src="imagePath" :height="height" :width="width" :title="title" :alt="alt" @click="$emit('click')" :fluid="fluid" :rounded="rounded" />
+    <img :src="imagePath" :height="getHeight" :width="getWidth" :title="title" :alt="alt" @click="$emit('click')" :class="{ roundedcorners: rounded }" />
 </template>
 
 <script>
@@ -37,7 +37,19 @@ export default {
     computed: {
         imagePath() {
             return process.env.VUE_APP_IMAGEREPOSITORY + "/" + this.src;
+        },
+        getWidth() {
+            return this.fluid ? "100%" : this.width;
+        },
+        getHeight() {
+            return this.fluid ? "auto" : this.height;
         }
     }
 }
 </script>
+
+<style scoped>
+.roundedcorners {
+    border-radius: 8px;
+}
+</style>
