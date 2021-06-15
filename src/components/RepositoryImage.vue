@@ -3,8 +3,6 @@
 </template>
 
 <script>
-require("dotenv").config();
-
 export default {
     props: {
         src: {
@@ -36,9 +34,14 @@ export default {
             default: false
         }
     },
+    data() {
+        return {
+            path: ""
+        }
+    },
     computed: {
         imagePath() {
-            return process.env.VUE_APP_IMAGEREPOSITORY + "/" + this.src;
+            return this.path + "/" + this.src;
         },
         getWidth() {
             return this.fluid ? "100%" : this.width;

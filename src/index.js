@@ -2,6 +2,7 @@ import Vue from "vue";
 import RepositoryImage from "@/components/RepositoryImage";
 
 function install(Vue, options = {}) {
+    RepositoryImage.data = () => { return { path: options.Path || "" } };
     Vue.component(options.RepositoryImageName || "RepositoryImage", RepositoryImage);
 }
 

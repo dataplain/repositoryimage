@@ -34,7 +34,7 @@ Create the src/resources/repositoryimage.js:
 import Vue from "vue";
 import RepositoryImage from "@dataplain/repositoryimage";
 
-Vue.use(RepositoryImage, { RepositoryImageName: "MyRepositoryImage" });
+Vue.use(RepositoryImage, { RepositoryImageName: "MyRepositoryImage", Path: process.env.VUE_APP_YOUR_CONFIG_PATH });
 ```
 
 ### Import repositoryimage.js
@@ -58,7 +58,7 @@ new Vue({
 ### Set .env file
 
 ```text
-VUE_APP_IMAGEREPOSITORY=https://my-repository.example.com/images
+VUE_APP_YOUR_CONFIG_PATH=https://my-repository.example.com/images
 ```
 
 ## How to use (example in App.vue)
